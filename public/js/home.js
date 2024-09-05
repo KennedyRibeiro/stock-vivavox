@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const credentials = localStorage.getItem('auth'); // Obtém as credenciais armazenadas
 
+        //const isLoggedIn = localStorage.getItem('auth')
+
+        //if (!isLoggedIn) {
+            //location.href('/login')
+       // }
+
         fetch('http://localhost:3000/addEquipment', {
             method: 'POST',
             headers: {

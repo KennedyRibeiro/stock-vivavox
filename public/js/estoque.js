@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     row.innerHTML = `
                         <td>${item.equipment}</td>
                         <td>${item.new}</td>
-                        <td>${item.semi_novo || item.semiNew || 0}</td>
+                        <td>${item.semi_novo || item.seminew || 0}</td>
                         <td>${item.total}</td>
                     `;
                     inventoryTableBody.appendChild(row);
