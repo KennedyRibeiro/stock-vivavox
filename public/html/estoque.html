@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Atual</title>
+    <link rel="stylesheet" href="../css/estoque.css">
+    <link rel="shortcut icon" href="../images/xvvx.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Estoque</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Seção para exibir a tabela de estoque -->
+    <div class="inventory-container">
+        <h3>Estoque Atual</h3>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Equipamentos</th>
+                    <th>Nova</th>
+                    <th>Semi-novo</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados serão inseridos aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/estoque.js"></script>
+</body>
+</html>

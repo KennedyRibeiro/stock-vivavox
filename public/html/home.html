@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sistema de Estoque</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href="../images/xvvx.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Estoque</h1>
+        <nav>
+            <ul>
+                <li><a target="_blank" href="estoque.html">Produtos</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Gerenciamento de Estoque</h2>
+
+            <!-- Formulário para adicionar equipamento -->
+            <div class="form-container">
+                <h3>Adicionar Equipamento</h3>
+                <form id="addEquipmentForm">
+                    <div class="input-group">
+                        <label for="equipmentType">Tipo de Equipamento</label>
+                        <select id="equipmentType" name="equipmentType" required>
+                            <option value="ONU Parks 101">ONU Parks 101</option>
+                            <option value="ONU Huawei bridge verde">ONU Huawei bridge verde</option>
+                            <option value="ONU Huawei bridge azul">ONU Huawei bridge azul</option>
+                            <option value="ONU Huawei 2P">ONU Huawei 2P</option>
+                            <option value="ONU Huawei X6">ONU Huawei X6</option>
+                            <option value="TP-LINK EC220">TP-LINK EC220</option>
+                            <option value="TP-LINK EX220">TP-LINK EX220</option>
+                            <option value="TP-LINK EX141">TP-LINK EX141</option>
+                            <option value="UniFi Lite">UniFi Lite</option>
+                            <option value="UniFi HD">UniFi HD</option>
+                            <option value="MikroTik RB">MikroTik RB</option>
+                            <option value="Cordão APC/APC 1,5">Cordão APC/APC 1,5</option>
+                            <option value="Cordão APC/APC 0,5">Cordão APC/APC 0,5</option>
+                            <option value="Cordão APC/UPC 1,5">Cordão APC/UPC 1,5</option>
+                            <option value="Cordão APC/UPC 0,5">Cordão APC/UPC 0,5</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="condition">Condição</label>
+                        <select id="condition" name="condition" required>
+                            <option value="nova">Nova</option>
+                            <option value="semi-novo">Semi-novo</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="quantity">Quantidade</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <button type="submit">Adicionar ao Estoque</button>
+                </form>
+            </div>
+
+            <!-- Formulário para remover equipamento -->
+            <div class="form-container">
+                <h3>Remover Equipamento</h3>
+                <form id="removeEquipmentForm">
+                    <div class="input-group">
+                        <label for="equipmentTypeRemove">Tipo de Equipamento</label>
+                        <select id="equipmentTypeRemove" name="equipmentTypeRemove" required>
+                            <option value="ONU Parks 101">ONU Parks 101</option>
+                            <option value="ONU Huawei bridge verde">ONU Huawei bridge verde</option>
+                            <option value="ONU Huawei bridge azul">ONU Huawei bridge azul</option>
+                            <option value="ONU Huawei 2P">ONU Huawei 2P</option>
+                            <option value="ONU Huawei X6">ONU Huawei X6</option>
+                            <option value="TP-LINK EC220">TP-LINK EC220</option>
+                            <option value="TP-LINK EX220">TP-LINK EX220</option>
+                            <option value="TP-LINK EX141">TP-LINK EX141</option>
+                            <option value="UniFi Lite">UniFi Lite</option>
+                            <option value="UniFi HD">UniFi HD</option>
+                            <option value="MikroTik RB">MikroTik RB</option>
+                            <option value="Cordão APC/APC 1,5">Cordão APC/APC 1,5</option>
+                            <option value="Cordão APC/APC 0,5">Cordão APC/APC 0,5</option>
+                            <option value="Cordão APC/UPC 1,5">Cordão APC/UPC 1,5</option>
+                            <option value="Cordão APC/UPC 0,5">Cordão APC/UPC 0,5</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="conditionRemove">Condição</label>
+                        <select id="conditionRemove" name="conditionRemove" required>
+                            <option value="nova">Nova</option>
+                            <option value="semi-novo">Semi-novo</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="quantityRemove">Quantidade</label>
+                        <input type="number" id="quantityRemove" name="quantityRemove" min="1" required>
+                    </div>
+                    <button type="submit">Remover do Estoque</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>

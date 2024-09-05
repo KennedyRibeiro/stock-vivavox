@@ -1,0 +1,69 @@
+/* estoque.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.inventory-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1200px; /* Define uma largura máxima para centralizar o conteúdo */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#inventoryTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#inventoryTable th,
+#inventoryTable td {
+    border: 1px solid #ddd;
+    padding: 0.75rem; /* Um pouco mais de padding para melhor visualização */
+    text-align: center;
+}
+
+#inventoryTable th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#inventoryTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
