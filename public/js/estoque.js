@@ -42,6 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadInventory(); // Carregar estoque ao iniciar
 
-    // Atualização periódica a cada 5 minutos (opcional)
+    // Atualização periódica a cada 5 minutos
     // setInterval(loadInventory, 5 * 60 * 1000);
 });
