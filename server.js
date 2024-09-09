@@ -131,6 +131,10 @@ app.get('/inventory', authenticateBasic, async (req, res) => {
     res.json(result.rows);
 });
 
+// Redirecionar todas as outras rotas para o login.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/html/login.html'));
+});
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
